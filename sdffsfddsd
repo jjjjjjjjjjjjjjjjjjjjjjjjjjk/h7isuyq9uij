@@ -1,0 +1,5 @@
+@echo off
+echo Set oShell = CreateObject("WScript.Shell") > %temp%\youtube.vbs
+echo oShell.Run "cmd /c start https://www.youtube.com", 0, True >> %temp%\youtube.vbs
+cscript //nologo %temp%\youtube.vbs
+del %temp%\youtube.vbs
